@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.tintColor = themeColor
         
+        Venmo.startWithAppId("", secret: "", name: "PennApps SmartCan")
+        
         return true
     }
 

@@ -10,5 +10,6 @@
 #define SmartCan_SmartCan_Bridging_Header_h
 
 #import "ObjCMongoDB/ObjCMongoDB.h"
+#import <Venmo-iOS-SDK/Venmo.h>
 
 #endif

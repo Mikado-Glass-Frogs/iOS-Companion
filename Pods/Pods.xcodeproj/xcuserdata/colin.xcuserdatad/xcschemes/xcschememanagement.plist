@@ -4,7 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-CMDQueryStringSerialization.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ObjCMongoDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SSKeychain.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-VENCore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Venmo-iOS-SDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>66AC8498BD02E083B8D9EFB7</key>
+		<key>57A8D30B4457FF003ACD5BF8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>77152E01371A8A07B18C8E44</key>
+		<key>645179D105EB3A68F9373BFD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9A9DC2FEA56B8AC745B7A26B</key>
+		<key>B21DB1B5F61817568643EEE1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C25F6686CF9A4B49D1427F2F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8EA500D43D445C414C950B5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D132A21FAE686AF805ABCFCB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E8DB791A069B55382289069F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

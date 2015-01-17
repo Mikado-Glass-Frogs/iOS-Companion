@@ -49,7 +49,7 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
         let cityInfoDecoded = BSONDecoder.decodeDictionaryWithData(data)
         println("City Info Decoded: \(cityInfoDecoded)")
         let dbConn: MongoConnection = MongoConnection(forServer: "107.170.91.187", error: nil)
-        let collection: MongoDBCollection = dbConn.collectionWithName("test.firstCollection")
+        let collection: MongoDBCollection = dbConn.collectionWithName("pennapps.personal_data")
         collection.insertDictionary(cityInfo, writeConcern: nil, error: nil)
         
         // End Sample Code
