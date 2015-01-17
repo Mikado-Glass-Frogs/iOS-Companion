@@ -15,16 +15,41 @@ let themeColor = UIColor(red: 0.01, green: 0.41, blue: 0.22, alpha: 1.0)
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var mainNavigation: UINavigationController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
-        window?.tintColor = themeColor
-        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window!.tintColor = themeColor
+    
         UILabel.appearance().font = UIFont(name: "AppleSDGothicNeo-Thin", size: 17)
         
-        Venmo.startWithAppId("", secret: "", name: "PennApps SmartCan")
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont.systemFontOfSize(18)]
+        UINavigationBar.appearance().barTintColor = themeColor
+        
+        let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        flowLayout.itemSize = CGSizeMake(340, 200)
+        
+        let mainCollectionView: SCCollectionViewController = SCCollectionViewController(collectionViewLayout: flowLayout)
+        
+        self.mainNavigation = UINavigationController(rootViewController: mainCollectionView)
+        self.window?.rootViewController = self.mainNavigation
+        self.window?.makeKeyAndVisible()
+        
+//        let shadow: NSShadow = NSShadow()
+//        shadow.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.8)
+//        shadow.shadowOffset = CGSizeMake(0, 1)
+//        let font = UIFont(name: "HelveticaNeue-CondensedBlack", size: 21)
+//        let color = UIColor(red: 0.96, green: 0.96, blue: 0.96, alpha: 1.0)
+//        let dict: [] = [NSForegroundColorAttributeName: color, NSShadowAttributeName: shadow, NSFontAttributeName: font]
+//        UINavigationBar.appearance().titleTextAttributes =
+//            NSDictionary(
+//            dictionary:
+//                dict)
+        
+        self.mainNavigation?.title = "Smart Can"
+        //Venmo.startWithAppId("", secret: "", name: "PennApps SmartCan")
         
         return true
     }

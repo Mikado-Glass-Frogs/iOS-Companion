@@ -40,6 +40,9 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
         
         // Do any additional setup after loading the view.
         
+        UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+        self.title = "SmartCan"
+        
         // Example code
         
         let cityInfo = NSDictionary(dictionary: ["country": "United States"])
@@ -53,6 +56,8 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
         collection.insertDictionary(cityInfo, writeConcern: nil, error: nil)
         
         // End Sample Code
+        
+        
         
     }
     
@@ -174,7 +179,7 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
         }
         
         // Present the new view controller
-        self.presentViewController(newViewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(newViewController, animated: true)
     }
     
     // MARK: UICollectionViewDelegate
