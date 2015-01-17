@@ -23,7 +23,7 @@ class SCCollectionViewController: UICollectionViewController {
         
         // Do any additional setup after loading the view.
         
-        println("Penn apppppppppps");
+        println("Penn apppppps");
     }
 
     override func didReceiveMemoryWarning() {
