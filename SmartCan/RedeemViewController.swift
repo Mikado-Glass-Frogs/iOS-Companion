@@ -8,13 +8,17 @@
 
 import UIKit
 
-class RedeemViewController: UIViewController {
+class RedeemViewController: TemplateDetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        println("Welcome to the Redeem View Controller")
+        //header
+        let header = UITextField(frame: CGRectMake(20, 100, 250, 40))
         
-        self.view.backgroundColor = UIColor.whiteColor()
+        header.text = "Your Current Balance Is:"
+        
+        
+        
         
     }
 }

@@ -8,15 +8,8 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: TemplateDetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        println("Welcome to the Settings View Controller")
-        
-        self.view.backgroundColor = UIColor.whiteColor()
-        
-        
     }
-
 }

@@ -8,13 +8,8 @@
 
 import UIKit
 
-class RankingViewController: UIViewController {
+class RankingViewController: TemplateDetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        println("Welcome to the Ranking View Controller")
-        
-        self.view.backgroundColor = UIColor.whiteColor()
-        
     }
 }

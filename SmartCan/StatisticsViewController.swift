@@ -8,13 +8,8 @@
 
 import UIKit
 
-class StatisticsViewController: UIViewController {
+class StatisticsViewController: TemplateDetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        println("Welcome to the Statistics View Controller")
-        
-        self.view.backgroundColor = UIColor.whiteColor()
-        
     }
 }

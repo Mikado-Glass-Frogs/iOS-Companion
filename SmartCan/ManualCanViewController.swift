@@ -8,19 +8,9 @@
 
 import UIKit
 
-class ManualCanViewController: UIViewController {
-    
-    var titleLabel: UILabel = UILabel(frame: CGRectMake(50, 40, 200, 100))
-    
+class ManualCanViewController: TemplateDetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        println("Welcome to the Manual Can View Controller")
-        
-        self.view.backgroundColor = UIColor.whiteColor()
-        self.view.addSubview(titleLabel)
-        
-        
         
         let offset = CGFloat(100)
         // Add Trash Button
@@ -37,12 +27,6 @@ class ManualCanViewController: UIViewController {
         rButton.shadowColor = UIColor.ht_mintDarkColor()
         rButton.setTitle("RECYCLE", forState: UIControlState.Normal)
         self.view.addSubview(rButton)
-        
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: self, action: "backButtonPressed")
-    }
-    
-    func backButtonPressed() {
-        println("BACK!")
-        self.navigationController?.popViewControllerAnimated(true)
     }
 }
+

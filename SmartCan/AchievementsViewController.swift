@@ -8,13 +8,8 @@
 
 import UIKit
 
-class AchievementsViewController: UIViewController {
+class AchievementsViewController: TemplateDetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        println("Welcome to the Achievements View Controller")
-        
-        self.view.backgroundColor = UIColor.whiteColor()
-        
     }
 }

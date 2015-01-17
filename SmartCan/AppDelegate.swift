@@ -22,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window!.tintColor = themeColor
     
-        UILabel.appearance().font = UIFont(name: "AppleSDGothicNeo-Thin", size: 17)
+        UILabel.appearance().font = UIFont(name: "AppleSDGothicNeo-Bold", size: 17)
+        UILabel.appearance().tintColor = UIColor.whiteColor()
         
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont.systemFontOfSize(18)]

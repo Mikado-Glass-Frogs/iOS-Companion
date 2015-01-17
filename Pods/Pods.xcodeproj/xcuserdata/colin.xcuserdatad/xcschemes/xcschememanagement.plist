@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-EstimoteIndoorSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-EstimoteSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-HTPressableButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,42 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>14E2B2F21F66EF297BFF5A3B</key>
+		<key>18FA5715BEFD5485FBB4CD1D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4C713920757C4544E38C8118</key>
+		<key>1E8827192291D5DCE4BACAB3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5D867B477FA9414EAC1AD161</key>
+		<key>3CC11FAC91806876A34EEB36</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7339C2F08ED893204693EAC2</key>
+		<key>68752332F02EC32418728C5C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>98D62E37E711FE15A4D79EEB</key>
+		<key>702341CFFDEB444F8B940276</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CF9BBD99B2FA470429A9B51C</key>
+		<key>79E569D7EABCD8A141981C85</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DC1418C5E22BDFFA98A53629</key>
+		<key>8892FB38F9AF2E52172C39C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E3284BE241B3F97BF7C562EE</key>
+		<key>BF57BE044D58F6EAC8CFC3BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C930275F83E10B2C972F42C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4E75680BB020431D06C96DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

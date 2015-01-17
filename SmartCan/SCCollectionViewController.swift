@@ -11,7 +11,7 @@ import UIKit
 
 let reuseIdentifier = "Cell"
 let titles = ["Redeem",
-    "Acheivements",
+    "Achievements",
     "Rankings",
     "Statistics",
     "Can Operator",
@@ -43,22 +43,15 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
         self.title = "SmartCan"
         
-        // Example code
+        let dg = DataGrabber()
+        dg.login = "cking"
+        dg.password = "password1"
         
-        let cityInfo = NSDictionary(dictionary: ["country": "United States"])
+        println("getData")
+        println(dg.data)
         
-        let data = cityInfo.BSONDocument().dataValue()
-        
-        let cityInfoDecoded = BSONDecoder.decodeDictionaryWithData(data)
-        println("City Info Decoded: \(cityInfoDecoded)")
-        let dbConn: MongoConnection = MongoConnection(forServer: "107.170.91.187", error: nil)
-        let collection: MongoDBCollection = dbConn.collectionWithName("pennapps.personal_data")
-        collection.insertDictionary(cityInfo, writeConcern: nil, error: nil)
-        
-        // End Sample Code
-        
-        
-        
+        println("Get Login")
+        println(dg.loginData())
     }
     
     override func didReceiveMemoryWarning() {
@@ -110,7 +103,7 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
             return CGSize(width: 340, height: 200)
     }
 
-    private let sectionInsets = UIEdgeInsets(top: 30.0, left: 0.0, bottom: 20.0, right: 0.0)
+    private let sectionInsets = UIEdgeInsets(top: 20.0, left: 0.0, bottom: 20.0, right: 0.0)
     
     func collectionView(collectionView: UICollectionView!,
         layout collectionViewLayout: UICollectionViewLayout!,
@@ -148,7 +141,7 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        var newViewController: UIViewController
+        var newViewController: TemplateDetailViewController
         
         // Pick the view controller
         switch(indexPath.row) {
@@ -177,6 +170,9 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
             println("WOW.. YOU MESSED UP BOY, how'd you forget a title like that?")
             abort()
         }
+        
+        newViewController.titleText = titles[indexPath.row]
+        newViewController.backgroundColor = colorWithHexString(colors[indexPath.row])
         
         // Present the new view controller
         self.navigationController?.pushViewController(newViewController, animated: true)

@@ -14,6 +14,7 @@
 		3B4063C31A69FC520067D3DE /* SmartCanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4063C21A69FC520067D3DE /* SmartCanTests.swift */; };
 		3B4063CD1A69FCA10067D3DE /* SCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4063CC1A69FCA10067D3DE /* SCCollectionViewController.swift */; };
 		3B4063CF1A6A05FB0067D3DE /* GroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4063CE1A6A05FB0067D3DE /* GroupCollectionViewCell.swift */; };
+		3B85138B1A6AB83100E7C9E5 /* DataGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B85138A1A6AB83100E7C9E5 /* DataGrabber.m */; };
 		3B96A8DB1A6A513400587B73 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A8DA1A6A513400587B73 /* SettingsViewController.swift */; };
 		3B96A8DE1A6A540700587B73 /* RedeemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A8DD1A6A540700587B73 /* RedeemViewController.swift */; };
 		3B96A8E01A6A544F00587B73 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A8DF1A6A544F00587B73 /* AchievementsViewController.swift */; };
@@ -21,6 +22,7 @@
 		3B96A8E41A6A54AF00587B73 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A8E31A6A54AF00587B73 /* RankingViewController.swift */; };
 		3B96A8E61A6A54CD00587B73 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A8E51A6A54CD00587B73 /* StatisticsViewController.swift */; };
 		3B96A8E81A6A54DC00587B73 /* ManualCanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A8E71A6A54DC00587B73 /* ManualCanViewController.swift */; };
+		3B96A9451A6A8C1800587B73 /* TemplateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A9441A6A8C1800587B73 /* TemplateDetailViewController.swift */; };
 		E6B4CF240002B4C22A54502B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF15A22D31B46355B840D5F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		3B4063C21A69FC520067D3DE /* SmartCanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCanTests.swift; sourceTree = "<group>"; };
 		3B4063CC1A69FCA10067D3DE /* SCCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCollectionViewController.swift; sourceTree = "<group>"; };
 		3B4063CE1A6A05FB0067D3DE /* GroupCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B8513891A6AB83100E7C9E5 /* DataGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataGrabber.h; sourceTree = "<group>"; };
+		3B85138A1A6AB83100E7C9E5 /* DataGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataGrabber.m; sourceTree = "<group>"; };
 		3B96A8DA1A6A513400587B73 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3B96A8DD1A6A540700587B73 /* RedeemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedeemViewController.swift; sourceTree = "<group>"; };
 		3B96A8DF1A6A544F00587B73 /* AchievementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 		3B96A8E31A6A54AF00587B73 /* RankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = SOURCE_ROOT; };
 		3B96A8E51A6A54CD00587B73 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		3B96A8E71A6A54DC00587B73 /* ManualCanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualCanViewController.swift; sourceTree = "<group>"; };
+		3B96A9441A6A8C1800587B73 /* TemplateDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateDetailViewController.swift; sourceTree = "<group>"; };
 		3BF7832D1A6A3F780027CC15 /* SmartCan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartCan-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		BFF15A22D31B46355B840D5F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9969E03DF9BA4D2044A8AB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				3BF7832D1A6A3F780027CC15 /* SmartCan-Bridging-Header.h */,
+				3B8513891A6AB83100E7C9E5 /* DataGrabber.h */,
+				3B85138A1A6AB83100E7C9E5 /* DataGrabber.m */,
 				3B4063AC1A69FC520067D3DE /* AppDelegate.swift */,
 				3B4063CC1A69FCA10067D3DE /* SCCollectionViewController.swift */,
 				3B4063CE1A6A05FB0067D3DE /* GroupCollectionViewCell.swift */,
@@ -157,6 +164,7 @@
 				3B96A8E71A6A54DC00587B73 /* ManualCanViewController.swift */,
 				3B96A8E11A6A54A000587B73 /* SmartCanViewController.swift */,
 				3B96A8DA1A6A513400587B73 /* SettingsViewController.swift */,
+				3B96A9441A6A8C1800587B73 /* TemplateDetailViewController.swift */,
 			);
 			name = Titles;
 			sourceTree = "<group>";
@@ -308,11 +316,13 @@
 				3B96A8E01A6A544F00587B73 /* AchievementsViewController.swift in Sources */,
 				3B96A8DE1A6A540700587B73 /* RedeemViewController.swift in Sources */,
 				3B4063CF1A6A05FB0067D3DE /* GroupCollectionViewCell.swift in Sources */,
+				3B85138B1A6AB83100E7C9E5 /* DataGrabber.m in Sources */,
 				3B4063CD1A69FCA10067D3DE /* SCCollectionViewController.swift in Sources */,
 				3B4063AD1A69FC520067D3DE /* AppDelegate.swift in Sources */,
 				3B96A8E21A6A54A000587B73 /* SmartCanViewController.swift in Sources */,
 				3B96A8E61A6A54CD00587B73 /* StatisticsViewController.swift in Sources */,
 				3B96A8E81A6A54DC00587B73 /* ManualCanViewController.swift in Sources */,
+				3B96A9451A6A8C1800587B73 /* TemplateDetailViewController.swift in Sources */,
 				3B96A8DB1A6A513400587B73 /* SettingsViewController.swift in Sources */,
 				3B96A8E41A6A54AF00587B73 /* RankingViewController.swift in Sources */,
 			);

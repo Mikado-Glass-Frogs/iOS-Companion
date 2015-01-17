@@ -8,13 +8,8 @@
 
 import UIKit
 
-class SmartCanViewController: UIViewController {
+class SmartCanViewController: TemplateDetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        println("Welcome to the Smart Can View Controller")
-        
-        self.view.backgroundColor = UIColor.whiteColor()
-        
     }
 }

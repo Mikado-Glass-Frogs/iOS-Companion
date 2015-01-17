@@ -12,6 +12,18 @@
 #define COCOAPODS_VERSION_MINOR_CMDQueryStringSerialization 2
 #define COCOAPODS_VERSION_PATCH_CMDQueryStringSerialization 0
 
+// EstimoteIndoorSDK
+#define COCOAPODS_POD_AVAILABLE_EstimoteIndoorSDK
+#define COCOAPODS_VERSION_MAJOR_EstimoteIndoorSDK 1
+#define COCOAPODS_VERSION_MINOR_EstimoteIndoorSDK 0
+#define COCOAPODS_VERSION_PATCH_EstimoteIndoorSDK 0
+
+// EstimoteSDK
+#define COCOAPODS_POD_AVAILABLE_EstimoteSDK
+#define COCOAPODS_VERSION_MAJOR_EstimoteSDK 2
+#define COCOAPODS_VERSION_MINOR_EstimoteSDK 3
+#define COCOAPODS_VERSION_PATCH_EstimoteSDK 2
+
 // HTPressableButton
 #define COCOAPODS_POD_AVAILABLE_HTPressableButton
 #define COCOAPODS_VERSION_MAJOR_HTPressableButton 1
