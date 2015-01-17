@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3642161A6A3361003713F5 /* MongoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3642151A6A3361003713F5 /* MongoViewController.swift */; };
 		3B4063AD1A69FC520067D3DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4063AC1A69FC520067D3DE /* AppDelegate.swift */; };
 		3B4063B21A69FC520067D3DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4063B01A69FC520067D3DE /* Main.storyboard */; };
 		3B4063B41A69FC520067D3DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4063B31A69FC520067D3DE /* Images.xcassets */; };
 		3B4063B71A69FC520067D3DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4063B51A69FC520067D3DE /* LaunchScreen.xib */; };
 		3B4063C31A69FC520067D3DE /* SmartCanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4063C21A69FC520067D3DE /* SmartCanTests.swift */; };
 		3B4063CD1A69FCA10067D3DE /* SCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4063CC1A69FCA10067D3DE /* SCCollectionViewController.swift */; };
+		3B4063CF1A6A05FB0067D3DE /* GroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4063CE1A6A05FB0067D3DE /* GroupCollectionViewCell.swift */; };
+		E6B4CF240002B4C22A54502B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF15A22D31B46355B840D5F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B3642151A6A3361003713F5 /* MongoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MongoViewController.swift; sourceTree = "<group>"; };
 		3B4063A71A69FC520067D3DE /* SmartCan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4063AB1A69FC520067D3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B4063AC1A69FC520067D3DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +40,11 @@
 		3B4063C11A69FC520067D3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B4063C21A69FC520067D3DE /* SmartCanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCanTests.swift; sourceTree = "<group>"; };
 		3B4063CC1A69FCA10067D3DE /* SCCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCollectionViewController.swift; sourceTree = "<group>"; };
+		3B4063CE1A6A05FB0067D3DE /* GroupCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BF7832D1A6A3F780027CC15 /* SmartCan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartCan-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		BFF15A22D31B46355B840D5F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9969E03DF9BA4D2044A8AB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FF50A59D222D2762F66052CB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B4CF240002B4C22A54502B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +66,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BEBC90C75AE43EBC941B2EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFF15A22D31B46355B840D5F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B40639E1A69FC520067D3DE = {
 			isa = PBXGroup;
 			children = (
 				3B4063A91A69FC520067D3DE /* SmartCan */,
 				3B4063BF1A69FC520067D3DE /* SmartCanTests */,
 				3B4063A81A69FC520067D3DE /* Products */,
+				AB82BE001EC008A2D87FB4C7 /* Pods */,
+				1BEBC90C75AE43EBC941B2EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +97,11 @@
 		3B4063A91A69FC520067D3DE /* SmartCan */ = {
 			isa = PBXGroup;
 			children = (
+				3BF7832D1A6A3F780027CC15 /* SmartCan-Bridging-Header.h */,
 				3B4063AC1A69FC520067D3DE /* AppDelegate.swift */,
 				3B4063CC1A69FCA10067D3DE /* SCCollectionViewController.swift */,
+				3B3642151A6A3361003713F5 /* MongoViewController.swift */,
+				3B4063CE1A6A05FB0067D3DE /* GroupCollectionViewCell.swift */,
 				3B4063B01A69FC520067D3DE /* Main.storyboard */,
 				3B4063B31A69FC520067D3DE /* Images.xcassets */,
 				3B4063B51A69FC520067D3DE /* LaunchScreen.xib */,
@@ -112,6 +135,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AB82BE001EC008A2D87FB4C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB9969E03DF9BA4D2044A8AB /* Pods.debug.xcconfig */,
+				FF50A59D222D2762F66052CB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B4063C61A69FC520067D3DE /* Build configuration list for PBXNativeTarget "SmartCan" */;
 			buildPhases = (
+				21E1FB304EB9B69933ADDD37 /* Check Pods Manifest.lock */,
 				3B4063A31A69FC520067D3DE /* Sources */,
 				3B4063A41A69FC520067D3DE /* Frameworks */,
 				3B4063A51A69FC520067D3DE /* Resources */,
+				7B9F4534B9EAC93AFAFDB6CB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,13 +241,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21E1FB304EB9B69933ADDD37 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7B9F4534B9EAC93AFAFDB6CB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B4063A31A69FC520067D3DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4063CF1A6A05FB0067D3DE /* GroupCollectionViewCell.swift in Sources */,
 				3B4063CD1A69FCA10067D3DE /* SCCollectionViewController.swift in Sources */,
 				3B4063AD1A69FC520067D3DE /* AppDelegate.swift in Sources */,
+				3B3642161A6A3361003713F5 /* MongoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,21 +403,25 @@
 		};
 		3B4063C71A69FC520067D3DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB9969E03DF9BA4D2044A8AB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmartCan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartCan-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		3B4063C81A69FC520067D3DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF50A59D222D2762F66052CB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmartCan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartCan-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +478,7 @@
 				3B4063C81A69FC520067D3DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B4063C91A69FC520067D3DE /* Build configuration list for PBXNativeTarget "SmartCanTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +487,7 @@
 				3B4063CB1A69FC520067D3DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
