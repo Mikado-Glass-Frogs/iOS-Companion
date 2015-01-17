@@ -14,8 +14,8 @@ let titles = ["Redeem",
     "Acheivements",
     "Rankings",
     "Statistics",
-    "Manual Can",
-    "Nearby SmartCans",
+    "Can Operator",
+    "SmartCan Locator",
     "Settings"]
 let colors = [
     "#F44336",
@@ -141,9 +141,40 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
         return UIColor(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: CGFloat(1))
     }
     
-    override func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
-        println(indexPath.row)
-        self.performSegueWithIdentifier("showDetail", sender: self)
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        var newViewController: UIViewController
+        
+        // Pick the view controller
+        switch(indexPath.row) {
+        case 0:
+            println("0")
+            newViewController = RedeemViewController()
+        case 1:
+            println("1")
+            newViewController = AchievementsViewController()
+        case 2:
+            println("2")
+            newViewController = RankingViewController()
+        case 3:
+            println("3")
+            newViewController = StatisticsViewController()
+        case 4:
+            println("4")
+            newViewController = ManualCanViewController()
+        case 5: // Settings
+            println("5")
+            newViewController = SmartCanViewController()
+        case 6: // Redeem
+            println("6")
+            newViewController = SettingsViewController()
+        default:
+            println("WOW.. YOU MESSED UP BOY, how'd you forget a title like that?")
+            abort()
+        }
+        
+        // Present the new view controller
+        self.presentViewController(newViewController, animated: true, completion: nil)
     }
     
     // MARK: UICollectionViewDelegate

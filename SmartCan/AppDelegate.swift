@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.tintColor = themeColor
         
+        UILabel.appearance().font = UIFont(name: "AppleSDGothicNeo-Thin", size: 17)
+        
         Venmo.startWithAppId("", secret: "", name: "PennApps SmartCan")
         
         return true

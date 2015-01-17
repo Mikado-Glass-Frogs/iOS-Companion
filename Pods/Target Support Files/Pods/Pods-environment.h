@@ -12,6 +12,18 @@
 #define COCOAPODS_VERSION_MINOR_CMDQueryStringSerialization 2
 #define COCOAPODS_VERSION_PATCH_CMDQueryStringSerialization 0
 
+// HTPressableButton
+#define COCOAPODS_POD_AVAILABLE_HTPressableButton
+#define COCOAPODS_VERSION_MAJOR_HTPressableButton 1
+#define COCOAPODS_VERSION_MINOR_HTPressableButton 3
+#define COCOAPODS_VERSION_PATCH_HTPressableButton 1
+
+// HTPressableButton/All
+#define COCOAPODS_POD_AVAILABLE_HTPressableButton_All
+#define COCOAPODS_VERSION_MAJOR_HTPressableButton_All 1
+#define COCOAPODS_VERSION_MINOR_HTPressableButton_All 3
+#define COCOAPODS_VERSION_PATCH_HTPressableButton_All 1
+
 // ObjCMongoDB
 #define COCOAPODS_POD_AVAILABLE_ObjCMongoDB
 #define COCOAPODS_VERSION_MAJOR_ObjCMongoDB 0

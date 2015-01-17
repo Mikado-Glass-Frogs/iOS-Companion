@@ -7,7 +7,7 @@
         <!--Navigation Controller-->
         <scene sceneID="sRb-rO-cOI">
             <objects>
-                <navigationController navigationBarHidden="YES" id="p3c-kD-VMU" sceneMemberID="viewController">
+                <navigationController id="p3c-kD-VMU" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lix-c4-PVw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -65,52 +65,10 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="Y59-ny-GXy"/>
-                    <connections>
-                        <segue destination="G0J-Yi-ugf" kind="presentation" identifier="showDetail" id="H4U-BS-EYD"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXD-mi-wxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="386" y="491"/>
         </scene>
-        <!--Mongo View Controller-->
-        <scene sceneID="LKA-Or-Pqq">
-            <objects>
-                <viewController id="G0J-Yi-ugf" customClass="MongoViewController" customModule="SmartCan" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oyU-Wn-xb8"/>
-                        <viewControllerLayoutGuide type="bottom" id="T4i-QZ-cBa"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3mF-ei-6U6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNi-a5-mx6">
-                                <rect key="frame" x="279" y="274" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbU-hs-kDO">
-                                <rect key="frame" x="21" y="20" width="54" height="30"/>
-                                <state key="normal" title="&lt; Back">
-                                    <color key="titleColor" red="0.30196078430000001" green="0.64313725489999995" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="DhG-h4-584" kind="show" id="O6O-MH-wNp"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9kO-HD-Ar9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1253" y="491"/>
-        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="O6O-MH-wNp"/>
-    </inferredMetricsTieBreakers>
 </document>

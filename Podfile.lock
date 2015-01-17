@@ -1,5 +1,8 @@
 PODS:
   - CMDQueryStringSerialization (0.2.0)
+  - HTPressableButton (1.3.1):
+    - HTPressableButton/All (= 1.3.1)
+  - HTPressableButton/All (1.3.1)
   - mongo-c-driver (0.8.1)
   - ObjCMongoDB (0.11.0):
     - mongo-c-driver (~> 0.8.1)
@@ -24,11 +27,13 @@ PODS:
     - VENCore (~> 3.0.0)
 
 DEPENDENCIES:
+  - HTPressableButton
   - ObjCMongoDB (~> 0.11.0)
   - Venmo-iOS-SDK (~> 1.3)
 
 SPEC CHECKSUMS:
   CMDQueryStringSerialization: e53570ccbce6004acba30b1c1210e254644cdb92
+  HTPressableButton: 8ac2184c6d0b9a0d78aaa1727acf51e4365fa1d2
   mongo-c-driver: 5a1c0d9d428c2df1281bf329f3d0aebb9875e485
   ObjCMongoDB: e333a6d8a972d6e05c29e6fd8b902fe1ac68da2c
   SSKeychain: cc48bd3ad24fcd9125adb9e0d23dd50b8bbd08b9

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E8DB791A069B55382289069F"
+               BlueprintIdentifier = "5D867B477FA9414EAC1AD161"
                BuildableName = "libPods-Venmo-iOS-SDK.a"
                BlueprintName = "Pods-Venmo-iOS-SDK"
                ReferencedContainer = "container:Pods.xcodeproj">
