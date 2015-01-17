@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3B4063AD1A69FC520067D3DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4063AC1A69FC520067D3DE /* AppDelegate.swift */; };
-		3B4063AF1A69FC520067D3DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4063AE1A69FC520067D3DE /* ViewController.swift */; };
 		3B4063B21A69FC520067D3DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4063B01A69FC520067D3DE /* Main.storyboard */; };
 		3B4063B41A69FC520067D3DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4063B31A69FC520067D3DE /* Images.xcassets */; };
 		3B4063B71A69FC520067D3DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4063B51A69FC520067D3DE /* LaunchScreen.xib */; };
 		3B4063C31A69FC520067D3DE /* SmartCanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4063C21A69FC520067D3DE /* SmartCanTests.swift */; };
+		3B4063CD1A69FCA10067D3DE /* SCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4063CC1A69FCA10067D3DE /* SCCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		3B4063A71A69FC520067D3DE /* SmartCan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4063AB1A69FC520067D3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B4063AC1A69FC520067D3DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B4063AE1A69FC520067D3DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B4063B11A69FC520067D3DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B4063B31A69FC520067D3DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3B4063B61A69FC520067D3DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3B4063BC1A69FC520067D3DE /* SmartCanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartCanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4063C11A69FC520067D3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B4063C21A69FC520067D3DE /* SmartCanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCanTests.swift; sourceTree = "<group>"; };
+		3B4063CC1A69FCA10067D3DE /* SCCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				3B4063AC1A69FC520067D3DE /* AppDelegate.swift */,
-				3B4063AE1A69FC520067D3DE /* ViewController.swift */,
+				3B4063CC1A69FCA10067D3DE /* SCCollectionViewController.swift */,
 				3B4063B01A69FC520067D3DE /* Main.storyboard */,
 				3B4063B31A69FC520067D3DE /* Images.xcassets */,
 				3B4063B51A69FC520067D3DE /* LaunchScreen.xib */,
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B4063AF1A69FC520067D3DE /* ViewController.swift in Sources */,
+				3B4063CD1A69FCA10067D3DE /* SCCollectionViewController.swift in Sources */,
 				3B4063AD1A69FC520067D3DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
