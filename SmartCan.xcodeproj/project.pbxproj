@@ -18,7 +18,7 @@
 		3B85138D1A6ADD5700E7C9E5 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B85138C1A6ADD5700E7C9E5 /* NavigationControllerDelegate.swift */; };
 		3B85138F1A6ADF1500E7C9E5 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B85138E1A6ADF1500E7C9E5 /* TransitionAnimator.swift */; };
 		3B8513911A6B977C00E7C9E5 /* AchievementTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B8513901A6B977C00E7C9E5 /* AchievementTableCell.xib */; };
-		3B8513931A6B986800E7C9E5 /* AchievementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8513921A6B986800E7C9E5 /* AchievementTableViewCell.swift */; };
+		3B8513931A6B986800E7C9E5 /* AchievementTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8513921A6B986800E7C9E5 /* AchievementTableCell.swift */; };
 		3B96A8DB1A6A513400587B73 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A8DA1A6A513400587B73 /* SettingsViewController.swift */; };
 		3B96A8DE1A6A540700587B73 /* RedeemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A8DD1A6A540700587B73 /* RedeemViewController.swift */; };
 		3B96A8E01A6A544F00587B73 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A8DF1A6A544F00587B73 /* AchievementsViewController.swift */; };
@@ -57,7 +57,7 @@
 		3B85138C1A6ADD5700E7C9E5 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
 		3B85138E1A6ADF1500E7C9E5 /* TransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
 		3B8513901A6B977C00E7C9E5 /* AchievementTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AchievementTableCell.xib; sourceTree = "<group>"; };
-		3B8513921A6B986800E7C9E5 /* AchievementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementTableViewCell.swift; sourceTree = "<group>"; };
+		3B8513921A6B986800E7C9E5 /* AchievementTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementTableCell.swift; sourceTree = "<group>"; };
 		3B96A8DA1A6A513400587B73 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3B96A8DD1A6A540700587B73 /* RedeemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedeemViewController.swift; sourceTree = "<group>"; };
 		3B96A8DF1A6A544F00587B73 /* AchievementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 			children = (
 				3B96A8DD1A6A540700587B73 /* RedeemViewController.swift */,
 				3B96A8DF1A6A544F00587B73 /* AchievementsViewController.swift */,
-				3B8513921A6B986800E7C9E5 /* AchievementTableViewCell.swift */,
+				3B8513921A6B986800E7C9E5 /* AchievementTableCell.swift */,
 				3B8513901A6B977C00E7C9E5 /* AchievementTableCell.xib */,
 				3B96A8E31A6A54AF00587B73 /* RankingViewController.swift */,
 				3B96A8E51A6A54CD00587B73 /* StatisticsViewController.swift */,
@@ -327,7 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B96A8E01A6A544F00587B73 /* AchievementsViewController.swift in Sources */,
-				3B8513931A6B986800E7C9E5 /* AchievementTableViewCell.swift in Sources */,
+				3B8513931A6B986800E7C9E5 /* AchievementTableCell.swift in Sources */,
 				3B85138F1A6ADF1500E7C9E5 /* TransitionAnimator.swift in Sources */,
 				3B96A8DE1A6A540700587B73 /* RedeemViewController.swift in Sources */,
 				3B4063CF1A6A05FB0067D3DE /* GroupCollectionViewCell.swift in Sources */,

@@ -8,11 +8,10 @@
 
 import UIKit
 
-class AchievementTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var trophyImage: UIImageView!
-    @IBOutlet weak var percentTitle: UILabel!
+class AchievementTableCell: UITableViewCell {
     @IBOutlet weak var achievementTitle: UILabel!
+    @IBOutlet weak var percentTitle: UILabel!
+    @IBOutlet weak var trophyImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -16,21 +16,23 @@ class ManualCanViewController: TemplateDetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.backgroundColor = UIColor(red: 0.5, green: 0.8, blue: 0.96, alpha: 1.0)
+        
         let offset = CGFloat(300)
         let bHeight = CGFloat(100)
         // Add Trash Button
         let tframe = CGRectMake(20, offset, 340, bHeight)
         self.tButton = HTPressableButton(frame: tframe, buttonStyle: HTPressableButtonStyle.Rounded)
-        self.tButton!.buttonColor = UIColor.ht_grapeFruitColor()
-        self.tButton!.shadowColor = UIColor.ht_grapeFruitDarkColor()
+        self.tButton!.buttonColor = UIColor.ht_peterRiverColor()
+        self.tButton!.shadowColor = UIColor.ht_belizeHoleColor()
         self.tButton!.setTitle("TRASH", forState: UIControlState.Normal)
         self.tButton!.addTarget(self, action: "activateCan:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(self.tButton!)
         // Add Recycling Button
         let rframe = CGRectMake(20, offset + bHeight, 340, bHeight)
         self.rButton = HTPressableButton(frame: rframe, buttonStyle: HTPressableButtonStyle.Rounded)
-        self.rButton!.buttonColor = UIColor.ht_mintColor()
-        self.rButton!.shadowColor = UIColor.ht_mintDarkColor()
+        self.rButton!.buttonColor = UIColor.ht_grassColor()
+        self.rButton!.shadowColor = UIColor.ht_grassDarkColor()
         self.rButton!.setTitle("RECYCLE", forState: UIControlState.Normal)
         self.rButton!.addTarget(self, action: "activateCan:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(self.rButton!)

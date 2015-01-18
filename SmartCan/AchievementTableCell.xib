@@ -4,15 +4,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AchievementTableViewCell" customModule="SmartCan" customModuleProvider="target">
-            <connections>
-                <outlet property="achievementTitle" destination="kGL-pn-Tea" id="ZcC-yn-3Ee"/>
-                <outlet property="percentTitle" destination="yGY-tw-32x" id="ZkH-hE-x6z"/>
-                <outlet property="trophyImage" destination="DLs-he-Yxc" id="gRL-0J-sU9"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AchievementTableViewCell" customModule="SmartCan" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" restorationIdentifier="achievementCell" selectionStyle="default" indentationWidth="10" rowHeight="69" id="fbI-rz-jrD" customClass="AchievementTableViewCell" customModule="SmartCan" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="achievementCell" selectionStyle="default" indentationWidth="10" rowHeight="69" id="fbI-rz-jrD" customClass="AchievementTableCell" customModule="SmartCan" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fbI-rz-jrD" id="MTd-DN-n7o">
@@ -24,18 +18,26 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="trophyImage" translatesAutoresizingMaskIntoConstraints="NO" id="DLs-he-Yxc">
-                        <rect key="frame" x="8" y="8" width="53" height="53"/>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="percentTitle" text="0%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGY-tw-32x">
                         <rect key="frame" x="69" y="40" width="233" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="trophyImage" image="trophy_bw" translatesAutoresizingMaskIntoConstraints="NO" id="DLs-he-Yxc">
+                        <rect key="frame" x="8" y="15" width="53" height="40"/>
+                    </imageView>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="achievementTitle" destination="kGL-pn-Tea" id="8HF-XC-cXt"/>
+                <outlet property="percentTitle" destination="yGY-tw-32x" id="es7-bH-mfq"/>
+                <outlet property="trophyImage" destination="DLs-he-Yxc" id="Xw7-dS-YlX"/>
+            </connections>
             <point key="canvasLocation" x="589" y="232.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="trophy_bw" width="800" height="600"/>
+    </resources>
 </document>

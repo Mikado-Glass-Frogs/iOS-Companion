@@ -29,6 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = themeColor
         UINavigationBar.appearance().translucent = true
         
+//        UINavigationBar.appearance().titleTextAttributes = [
+//            NSFontAttributeName: UIFont(name: "AppleSDGothicNeo-Thin", size: 17)!
+//        ]
+        
         let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         flowLayout.itemSize = CGSizeMake(340, 200)
         
@@ -37,17 +41,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         mainCollectionView.collectionView?.backgroundColor = UIColor.whiteColor()
         
         self.mainNavigation = UINavigationController(rootViewController: mainCollectionView)
+        
         self.window?.rootViewController = self.mainNavigation
         self.window?.makeKeyAndVisible()
         
-//        self.mainNavigation?.title = "Smart Can"
-//        let shadow: NSShadow = NSShadow()
-//        shadow.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.8)
-//        shadow.shadowOffset = CGSizeMake(0, 1)
-//        let font = UIFont(name: "HelveticaNeue-CondensedBlack", size: 21)
-//        let color = UIColor(red: 0.96, green: 0.96, blue: 0.96, alpha: 1.0)
-//        let dict = [NSForegroundColorAttributeName: color, NSShadowAttributeName: shadow, NSFontAttributeName: font]
-//        UINavigationBar.appearance().titleTextAttributes = NSDictionary(dictionary: dict)
+        self.mainNavigation?.title = "Smart Can"
+        let shadow: NSShadow = NSShadow()
+        shadow.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.8)
+        shadow.shadowOffset = CGSizeMake(0, 1)
+        let font = UIFont(name: "HelveticaNeue-CondensedBlack", size: 21)
+        let color = UIColor(red: 0.96, green: 0.96, blue: 0.96, alpha: 1.0)
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: color, NSShadowAttributeName: shadow, NSFontAttributeName: font!]
         
         //Venmo.startWithAppId("", secret: "", name: "PennApps SmartCan")
         

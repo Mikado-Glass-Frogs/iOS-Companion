@@ -23,17 +23,21 @@ class RedeemViewController: TemplateDetailViewController {
         header.textAlignment = NSTextAlignment.Center
         self.view.addSubview(header)
         
-        let imageView = UIImageView(frame: CGRectMake(-30, 100, 500, 500))
+        let imageView = UIImageView(frame: CGRectMake(30, 210, 300, 300))
         let image = UIImage(named: "square")
         imageView.image = image
         imageView.alpha = 0.2
         self.view.addSubview(imageView)
         
         //TODO: Get the current balance from MongoDB
-        let balance = UILabel(frame: CGRectMake(20, 480, 340, 60))
-        balance.text = "$2.34"
+        let balance = UILabel(frame: CGRectMake(0, 480, 375, 60))
+        
+        let dg = DataGrabber()
+        let keyPath = "container.axlui.password.current_balance"
+        balance.text = "BALANCE: $" + dg.getDataAt(keyPath)
         balance.textColor = UIColor.grayColor()
-        balance.font = UIFont(name: "AppleSDGothicNeo-Thin", size: 60)
+        balance.font = UIFont(name: "AppleSDGothicNeo-Thin", size: 46)
+        balance.textAlignment = NSTextAlignment.Center
         self.view.addSubview(balance)
         
         
