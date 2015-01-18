@@ -74,10 +74,10 @@ class GroupCollectionViewCell: UICollectionViewCell {
             newViewController = AchievementsViewController()
 //        case 2:
 //            newViewController = RankingViewController()
+//        case 2:
+//            println("gs")
+//            newViewController = StatisticsViewController()
         case 2:
-            println("gs")
-            newViewController = StatisticsViewController()
-        case 3:
             newViewController = ManualCanViewController()
 //        case 5:
 //            newViewController = SmartCanViewController()
