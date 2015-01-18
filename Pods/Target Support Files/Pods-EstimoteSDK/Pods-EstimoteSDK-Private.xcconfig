@@ -1,6 +1,6 @@
 #include "Pods-EstimoteSDK.xcconfig"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/EstimoteSDK" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CMDQueryStringSerialization" "${PODS_ROOT}/Headers/Public/EstimoteIndoorSDK" "${PODS_ROOT}/Headers/Public/EstimoteSDK" "${PODS_ROOT}/Headers/Public/HTPressableButton" "${PODS_ROOT}/Headers/Public/ObjCMongoDB" "${PODS_ROOT}/Headers/Public/SSKeychain" "${PODS_ROOT}/Headers/Public/VENCore" "${PODS_ROOT}/Headers/Public/Venmo-iOS-SDK" "${PODS_ROOT}/Headers/Public/mongo-c-driver" ${PODS_ESTIMOTESDK_HEADER_SEARCH_PATHS}
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/EstimoteSDK" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CMDQueryStringSerialization" "${PODS_ROOT}/Headers/Public/EstimoteIndoorSDK" "${PODS_ROOT}/Headers/Public/EstimoteSDK" "${PODS_ROOT}/Headers/Public/HTPressableButton" "${PODS_ROOT}/Headers/Public/ObjCMongoDB" "${PODS_ROOT}/Headers/Public/PNChart" "${PODS_ROOT}/Headers/Public/SSKeychain" "${PODS_ROOT}/Headers/Public/UICountingLabel" "${PODS_ROOT}/Headers/Public/VENCore" "${PODS_ROOT}/Headers/Public/Venmo-iOS-SDK" "${PODS_ROOT}/Headers/Public/mongo-c-driver" ${PODS_ESTIMOTESDK_HEADER_SEARCH_PATHS}
 LIBRARY_SEARCH_PATHS = ${PODS_ESTIMOTESDK_LIBRARY_SEARCH_PATHS}
 OTHER_LDFLAGS = ${PODS_ESTIMOTESDK_OTHER_LDFLAGS} -ObjC
 PODS_ROOT = ${SRCROOT}

@@ -36,6 +36,13 @@
     NSString *contents = [data valueForKeyPath:keyPath];
     return contents;
 }
+// Main Method to get data from
+- (NSArray *) getDataArrayAt: (NSString *) keyPath {
+    NSLog(@"LOG: FETCHING DATA ARRAY AT KEYPATH: %@", keyPath);
+    NSDictionary *data = self.data;
+    NSArray *contents = [data valueForKeyPath:keyPath];
+    return contents;
+}
 //update data
 - (void) putDataAt: (NSString *) keyPath
          withMatch: (NSString *) match

@@ -72,14 +72,15 @@ class GroupCollectionViewCell: UICollectionViewCell {
             newViewController = RedeemViewController()
         case 1:
             newViewController = AchievementsViewController()
+//        case 2:
+//            newViewController = RankingViewController()
         case 2:
-            newViewController = RankingViewController()
-        case 3:
+            println("gs")
             newViewController = StatisticsViewController()
-        case 4:
+        case 3:
             newViewController = ManualCanViewController()
-        case 5:
-            newViewController = SmartCanViewController()
+//        case 5:
+//            newViewController = SmartCanViewController()
             //        case 6:
             //            newViewController = SettingsViewController()
         default:

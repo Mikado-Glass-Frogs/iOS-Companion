@@ -14,5 +14,6 @@
 #import "HTPressableButton.h"
 #import "UIColor+HTColor.h"
 #import "DataGrabber.h"
+#import "PNChart.h"
 
 #endif

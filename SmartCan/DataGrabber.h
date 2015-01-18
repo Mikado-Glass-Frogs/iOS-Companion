@@ -16,4 +16,5 @@
          withMatch: (NSString *) match
        withContent: (NSString *) content;
 - (NSString *) getLoggedInDataAt: (NSString *) location;
+- (NSArray *) getDataArrayAt: (NSString *) keyPath;
 @end

@@ -29,7 +29,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-PNChart.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SSKeychain.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-UICountingLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -57,52 +67,62 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>408B8E7A80E055B7CDCA4E8A</key>
+		<key>04FF9FBB3F2FA94B0F0D8FB2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6886D9907A7DDCB55B7FF947</key>
+		<key>465A51D87272BEAEAF96DB7D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6AC90DC4DDB5A908C90A0D08</key>
+		<key>5128B2BF84ADA3950235D878</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>853486747822A1A0D9C58655</key>
+		<key>570997EA487B031B8F674CD2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8C819AFA3948EB730DA74DEB</key>
+		<key>6128A1D7FA3978547EBFF638</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B1B06521E298102340150D53</key>
+		<key>695A019C53367D6389128C09</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B6C7EED2BFFB88EA1423B033</key>
+		<key>697D65B69D2419F80B9F710A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CA0032D8462283422E24D5F4</key>
+		<key>9FAE3FEDFBF81FA4D74BE8E2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CBDF2788A8D04AFB331EE3C3</key>
+		<key>A17804B0F35017BDA1DE1F52</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DC3D3C47447EE375E44D4D45</key>
+		<key>B1155671E660FA672AF1A6F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8161400FD2265BCBE87FC55</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC075D2482DE94AB2EE3304F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
