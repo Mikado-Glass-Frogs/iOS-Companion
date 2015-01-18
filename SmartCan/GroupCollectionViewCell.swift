@@ -36,6 +36,7 @@ class GroupCollectionViewCell: UICollectionViewCell {
         textField = UILabel(frame: textFrame)
         textField.font = UIFont.systemFontOfSize(32)
         textField.textAlignment = .Center
+        textField.textColor = UIColor.whiteColor()
         contentView.addSubview(textField)
     }
 

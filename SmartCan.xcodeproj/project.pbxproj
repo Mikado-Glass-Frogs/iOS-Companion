@@ -15,6 +15,8 @@
 		3B4063CD1A69FCA10067D3DE /* SCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4063CC1A69FCA10067D3DE /* SCCollectionViewController.swift */; };
 		3B4063CF1A6A05FB0067D3DE /* GroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4063CE1A6A05FB0067D3DE /* GroupCollectionViewCell.swift */; };
 		3B85138B1A6AB83100E7C9E5 /* DataGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B85138A1A6AB83100E7C9E5 /* DataGrabber.m */; };
+		3B85138D1A6ADD5700E7C9E5 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B85138C1A6ADD5700E7C9E5 /* NavigationControllerDelegate.swift */; };
+		3B85138F1A6ADF1500E7C9E5 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B85138E1A6ADF1500E7C9E5 /* TransitionAnimator.swift */; };
 		3B96A8DB1A6A513400587B73 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A8DA1A6A513400587B73 /* SettingsViewController.swift */; };
 		3B96A8DE1A6A540700587B73 /* RedeemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A8DD1A6A540700587B73 /* RedeemViewController.swift */; };
 		3B96A8E01A6A544F00587B73 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A8DF1A6A544F00587B73 /* AchievementsViewController.swift */; };
@@ -50,6 +52,8 @@
 		3B4063CE1A6A05FB0067D3DE /* GroupCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B8513891A6AB83100E7C9E5 /* DataGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataGrabber.h; sourceTree = "<group>"; };
 		3B85138A1A6AB83100E7C9E5 /* DataGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataGrabber.m; sourceTree = "<group>"; };
+		3B85138C1A6ADD5700E7C9E5 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		3B85138E1A6ADF1500E7C9E5 /* TransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
 		3B96A8DA1A6A513400587B73 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3B96A8DD1A6A540700587B73 /* RedeemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedeemViewController.swift; sourceTree = "<group>"; };
 		3B96A8DF1A6A544F00587B73 /* AchievementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				3B85138A1A6AB83100E7C9E5 /* DataGrabber.m */,
 				3B4063AC1A69FC520067D3DE /* AppDelegate.swift */,
 				3B4063CC1A69FCA10067D3DE /* SCCollectionViewController.swift */,
+				3B85138C1A6ADD5700E7C9E5 /* NavigationControllerDelegate.swift */,
+				3B85138E1A6ADF1500E7C9E5 /* TransitionAnimator.swift */,
 				3B4063CE1A6A05FB0067D3DE /* GroupCollectionViewCell.swift */,
 				3B96A8DC1A6A537A00587B73 /* Titles */,
 				3B4063AA1A69FC520067D3DE /* Supporting Files */,
@@ -314,12 +320,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B96A8E01A6A544F00587B73 /* AchievementsViewController.swift in Sources */,
+				3B85138F1A6ADF1500E7C9E5 /* TransitionAnimator.swift in Sources */,
 				3B96A8DE1A6A540700587B73 /* RedeemViewController.swift in Sources */,
 				3B4063CF1A6A05FB0067D3DE /* GroupCollectionViewCell.swift in Sources */,
 				3B85138B1A6AB83100E7C9E5 /* DataGrabber.m in Sources */,
 				3B4063CD1A69FCA10067D3DE /* SCCollectionViewController.swift in Sources */,
 				3B4063AD1A69FC520067D3DE /* AppDelegate.swift in Sources */,
 				3B96A8E21A6A54A000587B73 /* SmartCanViewController.swift in Sources */,
+				3B85138D1A6ADD5700E7C9E5 /* NavigationControllerDelegate.swift in Sources */,
 				3B96A8E61A6A54CD00587B73 /* StatisticsViewController.swift in Sources */,
 				3B96A8E81A6A54DC00587B73 /* ManualCanViewController.swift in Sources */,
 				3B96A9451A6A8C1800587B73 /* TemplateDetailViewController.swift in Sources */,

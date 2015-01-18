@@ -14,6 +14,8 @@
 @property (nonatomic, strong) NSString *login;
 @property (nonatomic, strong) NSString *password;
 
-- (NSDictionary *) loginData;
+- (NSString *) loginData;
+- (NSString *) getDataAt: (NSString *) keyPath;
+- (NSString *) getLoggedInDataAt: (NSString *) location;
 
 @end

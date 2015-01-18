@@ -8,8 +8,13 @@
 
 import UIKit
 
+// Facebook Rankings
+
 class RankingViewController: TemplateDetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Connect to Facebook
+        
     }
 }

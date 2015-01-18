@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1E8827192291D5DCE4BACAB3"
+               BlueprintIdentifier = "25341C17FABA5DD21E5DE7AA"
                BuildableName = "libPods-VENCore.a"
                BlueprintName = "Pods-VENCore"
                ReferencedContainer = "container:Pods.xcodeproj">

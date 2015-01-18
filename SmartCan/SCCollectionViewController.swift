@@ -10,13 +10,13 @@ import UIKit
 
 
 let reuseIdentifier = "Cell"
-let titles = ["Redeem",
-    "Achievements",
-    "Rankings",
-    "Statistics",
-    "Can Operator",
-    "SmartCan Locator",
-    "Settings"]
+let titles = ["REDEEM",
+    "ACHIEVEMENTS",
+    "RANKINGS",
+    "STATISTICS",
+    "MANUAL SMART CAN",
+    "SMARTCAN LOCATOR",
+    "SETTINGS"]
 let colors = [
     "#F44336",
     "#8BC34A",
@@ -28,6 +28,8 @@ let colors = [
 ]
 
 class SCCollectionViewController: UICollectionViewController, UITextFieldDelegate, UICollectionViewDelegateFlowLayout {
+    
+    var navigationControllerDelegate: NavigationControllerDelegate?;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,17 +43,12 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
         // Do any additional setup after loading the view.
         
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+        
+        //Set up the Controller Delegate
+        navigationControllerDelegate = NavigationControllerDelegate()
+        self.navigationController?.delegate = navigationControllerDelegate
+        
         self.title = "SmartCan"
-        
-        let dg = DataGrabber()
-        dg.login = "cking"
-        dg.password = "password1"
-        
-        println("getData")
-        println(dg.data)
-        
-        println("Get Login")
-        println(dg.loginData())
     }
     
     override func didReceiveMemoryWarning() {
@@ -146,25 +143,18 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
         // Pick the view controller
         switch(indexPath.row) {
         case 0:
-            println("0")
             newViewController = RedeemViewController()
         case 1:
-            println("1")
             newViewController = AchievementsViewController()
         case 2:
-            println("2")
             newViewController = RankingViewController()
         case 3:
-            println("3")
             newViewController = StatisticsViewController()
         case 4:
-            println("4")
             newViewController = ManualCanViewController()
-        case 5: // Settings
-            println("5")
+        case 5:
             newViewController = SmartCanViewController()
-        case 6: // Redeem
-            println("6")
+        case 6:
             newViewController = SettingsViewController()
         default:
             println("WOW.. YOU MESSED UP BOY, how'd you forget a title like that?")
