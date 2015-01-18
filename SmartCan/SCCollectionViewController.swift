@@ -15,8 +15,7 @@ let titles = ["REDEEM",
     "RANKINGS",
     "STATISTICS",
     "MANUAL SMART CAN",
-    "SMARTCAN LOCATOR",
-    "SETTINGS"]
+    "SMARTCAN LOCATOR"]
 let colors = [
     "#F44336",
     "#8BC34A",
@@ -87,7 +86,7 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
         // Configure the cell
         
         cell.textField.text = titles[indexPath.row]
-        cell.backgroundColor = colorWithHexString(colors[indexPath.row])
+        cell.backgroundColor = UIColor(red: 0.4, green: 0.8, blue: 0.96, alpha: 1.0)//colorWithHexString(colors[indexPath.row])
         
         //cell.textField.text = titles[indexPath.row]
         
@@ -162,7 +161,7 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
         }
         
         newViewController.titleText = titles[indexPath.row]
-        newViewController.backgroundColor = colorWithHexString(colors[indexPath.row])
+//        newViewController.backgroundColor = colorWithHexString(colors[indexPath.row])
         
         // Present the new view controller
         self.navigationController?.pushViewController(newViewController, animated: true)

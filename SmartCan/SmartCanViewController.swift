@@ -11,5 +11,7 @@ import UIKit
 class SmartCanViewController: TemplateDetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Load Estimote SDK
     }
 }

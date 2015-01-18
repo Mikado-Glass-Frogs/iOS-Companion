@@ -11,5 +11,9 @@ import UIKit
 class SettingsViewController: TemplateDetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // TODO Add logout button for Venmo
+        // TODO Add logout button for Facebook
+        // Probably not going to be implemented in time
     }
 }

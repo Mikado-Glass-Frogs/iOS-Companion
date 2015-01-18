@@ -38,6 +38,11 @@ class GroupCollectionViewCell: UICollectionViewCell {
         textField.textAlignment = .Center
         textField.textColor = UIColor.whiteColor()
         contentView.addSubview(textField)
+        
+        self.contentView.layer.cornerRadius = 2.0
+        self.contentView.layer.borderWidth = 1.0
+        self.contentView.layer.borderColor = UIColor.clearColor().CGColor
+        self.contentView.layer.masksToBounds = true
     }
 
     required init(coder aDecoder: NSCoder) {

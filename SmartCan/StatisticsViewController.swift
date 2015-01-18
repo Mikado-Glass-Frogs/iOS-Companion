@@ -11,5 +11,7 @@ import UIKit
 class StatisticsViewController: TemplateDetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     }
 }

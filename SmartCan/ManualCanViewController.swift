@@ -9,24 +9,66 @@
 import UIKit
 
 class ManualCanViewController: TemplateDetailViewController {
+    
+    var tButton: HTPressableButton?
+    var rButton: HTPressableButton?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let offset = CGFloat(100)
+        let offset = CGFloat(300)
+        let bHeight = CGFloat(100)
         // Add Trash Button
-        let tframe = CGRectMake(20, offset, 340, 200)
-        let tButton = HTPressableButton(frame: tframe, buttonStyle: HTPressableButtonStyle.Rounded)
-        tButton.buttonColor = UIColor.ht_grapeFruitColor()
-        tButton.shadowColor = UIColor.ht_grapeFruitDarkColor()
-        tButton.setTitle("TRASH", forState: UIControlState.Normal)
-        self.view.addSubview(tButton)
+        let tframe = CGRectMake(20, offset, 340, bHeight)
+        self.tButton = HTPressableButton(frame: tframe, buttonStyle: HTPressableButtonStyle.Rounded)
+        self.tButton!.buttonColor = UIColor.ht_grapeFruitColor()
+        self.tButton!.shadowColor = UIColor.ht_grapeFruitDarkColor()
+        self.tButton!.setTitle("TRASH", forState: UIControlState.Normal)
+        self.tButton!.addTarget(self, action: "activateCan:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(self.tButton!)
         // Add Recycling Button
-        let rframe = CGRectMake(20, offset + 20 + 200, 340, 200)
-        let rButton = HTPressableButton(frame: rframe, buttonStyle: HTPressableButtonStyle.Rounded)
-        rButton.buttonColor = UIColor.ht_mintColor()
-        rButton.shadowColor = UIColor.ht_mintDarkColor()
-        rButton.setTitle("RECYCLE", forState: UIControlState.Normal)
-        self.view.addSubview(rButton)
+        let rframe = CGRectMake(20, offset + bHeight, 340, bHeight)
+        self.rButton = HTPressableButton(frame: rframe, buttonStyle: HTPressableButtonStyle.Rounded)
+        self.rButton!.buttonColor = UIColor.ht_mintColor()
+        self.rButton!.shadowColor = UIColor.ht_mintDarkColor()
+        self.rButton!.setTitle("RECYCLE", forState: UIControlState.Normal)
+        self.rButton!.addTarget(self, action: "activateCan:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(self.rButton!)
+    }
+    
+    func disableButtons() {
+        self.rButton!.enabled = false
+        self.tButton!.enabled = false
+    }
+    
+    func enableButtons() {
+        self.rButton!.enabled = true
+        self.tButton!.enabled = true
+    }
+    
+    func activateCan(button: UIButton) {
+        
+        // TODO Direct user to take barcode image and process it to get barcode number
+        
+        self.disableButtons()
+        
+        var url: NSURL
+        
+        if(button.titleLabel?.text! == "RECYCLE") {
+            // Activate the recycling
+            url = NSURL(string: "http://192.168.15.125:44000/recycle")!
+        } else {
+            // Activate the trash
+            url = NSURL(string: "http://192.168.15.125:44000/trash")!
+        }
+        //Send the request
+        let request = NSMutableURLRequest(URL: url)
+        request.HTTPMethod = "GET"
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue()) { (response, data, error) -> Void in
+            dispatch_async(dispatch_get_main_queue(),{
+                self.enableButtons()
+            });
+        }
     }
 }
 
