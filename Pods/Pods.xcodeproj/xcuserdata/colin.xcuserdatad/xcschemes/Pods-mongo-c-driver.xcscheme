@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "72B96796F9E4109949D8B22E"
+               BlueprintIdentifier = "CBDF2788A8D04AFB331EE3C3"
                BuildableName = "libPods-mongo-c-driver.a"
                BlueprintName = "Pods-mongo-c-driver"
                ReferencedContainer = "container:Pods.xcodeproj">

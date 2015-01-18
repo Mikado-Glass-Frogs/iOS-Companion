@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainCollectionView: SCCollectionViewController = SCCollectionViewController(collectionViewLayout: flowLayout)
         
         mainCollectionView.collectionView?.backgroundColor = UIColor.whiteColor()
-        
+        mainCollectionView.collectionView?.backgroundColor = UIColor(red: 0.5, green: 0.8, blue: 0.96, alpha: 1.0)
         self.mainNavigation = UINavigationController(rootViewController: mainCollectionView)
         
         self.window?.rootViewController = self.mainNavigation
@@ -54,9 +54,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: color, NSShadowAttributeName: shadow, NSFontAttributeName: font!]
         
-        //Venmo.startWithAppId("", secret: "", name: "PennApps SmartCan")
-        
-        let data = DataGrabber().data
         
         
         return true

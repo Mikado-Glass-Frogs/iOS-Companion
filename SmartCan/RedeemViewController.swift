@@ -15,15 +15,16 @@ class RedeemViewController: TemplateDetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let header = UILabel(frame: CGRectMake(20, 20, 340, 300))
+        let header = UILabel(frame: CGRectMake(20, 0, 340, 300))
         header.text = "REDEEM WITH SQUARE CASH"
         header.textColor = UIColor.grayColor()
         header.font = UIFont(name: "AppleSDGothicNeo-Thin", size: 50)
         header.numberOfLines = 0
         header.textAlignment = NSTextAlignment.Center
+        header.textColor = UIColor.whiteColor()
         self.view.addSubview(header)
         
-        let imageView = UIImageView(frame: CGRectMake(30, 210, 300, 300))
+        let imageView = UIImageView(frame: CGRectMake(30, 190, 300, 300))
         let image = UIImage(named: "square")
         imageView.image = image
         imageView.alpha = 0.2
@@ -37,12 +38,15 @@ class RedeemViewController: TemplateDetailViewController {
         balance.text = "BALANCE: $" + dg.getDataAt(keyPath)
         balance.textColor = UIColor.grayColor()
         balance.font = UIFont(name: "AppleSDGothicNeo-Thin", size: 46)
+        balance.textColor = UIColor.whiteColor()
         balance.textAlignment = NSTextAlignment.Center
         self.view.addSubview(balance)
         
         
         let cashOutButton = HTPressableButton(frame: CGRectMake(20, 550, 340, 100), buttonStyle: HTPressableButtonStyle.Rounded)
         cashOutButton.shadowHeight = 10
+        cashOutButton.buttonColor = UIColor.ht_peterRiverColor()
+        cashOutButton.shadowColor = UIColor.ht_belizeHoleColor()
         cashOutButton.setTitle("CASH OUT", forState: UIControlState.Normal)
         cashOutButton.addTarget(self, action: "cashout", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(cashOutButton)

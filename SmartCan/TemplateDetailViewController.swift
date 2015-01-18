@@ -15,7 +15,7 @@ class TemplateDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.whiteColor()
+        self.view.backgroundColor = UIColor(red: 0.5, green: 0.8, blue: 0.96, alpha: 1.0)
         self.title = self.titleText!
         
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: self, action: "backButtonPressed")

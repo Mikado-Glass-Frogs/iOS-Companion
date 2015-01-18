@@ -27,6 +27,8 @@
 		3B96A8E61A6A54CD00587B73 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A8E51A6A54CD00587B73 /* StatisticsViewController.swift */; };
 		3B96A8E81A6A54DC00587B73 /* ManualCanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A8E71A6A54DC00587B73 /* ManualCanViewController.swift */; };
 		3B96A9451A6A8C1800587B73 /* TemplateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96A9441A6A8C1800587B73 /* TemplateDetailViewController.swift */; };
+		3B97307C1A6BD615002CB7AB /* QRReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97307B1A6BD615002CB7AB /* QRReadViewController.swift */; };
+		3B97307E1A6BDB8F002CB7AB /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97307D1A6BDB8F002CB7AB /* InformationViewController.swift */; };
 		E6B4CF240002B4C22A54502B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF15A22D31B46355B840D5F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,8 @@
 		3B96A8E51A6A54CD00587B73 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		3B96A8E71A6A54DC00587B73 /* ManualCanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualCanViewController.swift; sourceTree = "<group>"; };
 		3B96A9441A6A8C1800587B73 /* TemplateDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateDetailViewController.swift; sourceTree = "<group>"; };
+		3B97307B1A6BD615002CB7AB /* QRReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRReadViewController.swift; sourceTree = "<group>"; };
+		3B97307D1A6BDB8F002CB7AB /* InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		3BF7832D1A6A3F780027CC15 /* SmartCan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartCan-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		BFF15A22D31B46355B840D5F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9969E03DF9BA4D2044A8AB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 				3B96A8E11A6A54A000587B73 /* SmartCanViewController.swift */,
 				3B96A8DA1A6A513400587B73 /* SettingsViewController.swift */,
 				3B96A9441A6A8C1800587B73 /* TemplateDetailViewController.swift */,
+				3B97307B1A6BD615002CB7AB /* QRReadViewController.swift */,
+				3B97307D1A6BDB8F002CB7AB /* InformationViewController.swift */,
 			);
 			name = Titles;
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 				3B96A8E01A6A544F00587B73 /* AchievementsViewController.swift in Sources */,
 				3B8513931A6B986800E7C9E5 /* AchievementTableCell.swift in Sources */,
 				3B85138F1A6ADF1500E7C9E5 /* TransitionAnimator.swift in Sources */,
+				3B97307C1A6BD615002CB7AB /* QRReadViewController.swift in Sources */,
 				3B96A8DE1A6A540700587B73 /* RedeemViewController.swift in Sources */,
 				3B4063CF1A6A05FB0067D3DE /* GroupCollectionViewCell.swift in Sources */,
 				3B85138B1A6AB83100E7C9E5 /* DataGrabber.m in Sources */,
@@ -341,6 +348,7 @@
 				3B96A9451A6A8C1800587B73 /* TemplateDetailViewController.swift in Sources */,
 				3B96A8DB1A6A513400587B73 /* SettingsViewController.swift in Sources */,
 				3B96A8E41A6A54AF00587B73 /* RankingViewController.swift in Sources */,
+				3B97307E1A6BDB8F002CB7AB /* InformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

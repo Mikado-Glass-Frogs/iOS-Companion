@@ -14,17 +14,8 @@ let titles = ["REDEEM",
     "ACHIEVEMENTS",
     "RANKINGS",
     "STATISTICS",
-    "MANUAL SMART CAN",
+    "MANUAL SMARTCAN",
     "SMARTCAN LOCATOR"]
-let colors = [
-    "#F44336",
-    "#8BC34A",
-    "#9C27B0",
-    "#FFC107",
-    "#2196F3",
-    "#FF5722",
-    "#00BCD4"
-]
 
 class SCCollectionViewController: UICollectionViewController, UITextFieldDelegate, UICollectionViewDelegateFlowLayout {
     
@@ -84,12 +75,10 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
         var cell: GroupCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as GroupCollectionViewCell
         
         // Configure the cell
-        
+        cell.collectionViewReference = self
         cell.textField.text = titles[indexPath.row]
-        cell.backgroundColor = UIColor(red: 0.4, green: 0.8, blue: 0.96, alpha: 1.0)//colorWithHexString(colors[indexPath.row])
-        
-        //cell.textField.text = titles[indexPath.row]
-        
+        cell.cellButton?.setTitle(titles[indexPath.row], forState: UIControlState.Normal)
+        cell.indexPath = indexPath
         return cell
     }
     
@@ -137,6 +126,8 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+        println("didselect at \(indexPath.row)")
+        
         var newViewController: TemplateDetailViewController
         
         // Pick the view controller
@@ -153,8 +144,8 @@ class SCCollectionViewController: UICollectionViewController, UITextFieldDelegat
             newViewController = ManualCanViewController()
         case 5:
             newViewController = SmartCanViewController()
-        case 6:
-            newViewController = SettingsViewController()
+//        case 6:
+//            newViewController = SettingsViewController()
         default:
             println("WOW.. YOU MESSED UP BOY, how'd you forget a title like that?")
             abort()

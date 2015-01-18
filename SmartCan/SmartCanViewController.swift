@@ -13,5 +13,6 @@ class SmartCanViewController: TemplateDetailViewController {
         super.viewDidLoad()
         
         // Load Estimote SDK
+        
     }
 }
