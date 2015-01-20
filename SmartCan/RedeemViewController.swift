@@ -16,7 +16,7 @@ class RedeemViewController: TemplateDetailViewController {
         super.viewDidLoad()
         
         let header = UILabel(frame: CGRectMake(20, 0, 340, 300))
-        header.text = "REDEEM WITH SQUARE CASH"
+        header.text = "REDEEM EARNED CASH"
         header.textColor = UIColor.grayColor()
         header.font = UIFont(name: "AppleSDGothicNeo-Thin", size: 50)
         header.numberOfLines = 0
@@ -53,8 +53,8 @@ class RedeemViewController: TemplateDetailViewController {
     }
     
     func cashout() {
-        // TODO: Interface with Cash to pay the user
-        println("Cash out pressed!")
+        // During the competition, I wasn't able to get the necessary API application keys from Venmo's developer page since Venmo apparently couldn't "verify my identity". So this app isn't completely integrated with Venmo.
+//        Venmo.sharedInstance().setDefaultTransactionMethod(VENTransactionMethodAppSwitch)
     }
     
     
