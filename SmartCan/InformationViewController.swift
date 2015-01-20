@@ -68,7 +68,7 @@ class InformationViewController: UIViewController {
             self.throwButton = HTPressableButton(frame: throwframe, buttonStyle: HTPressableButtonStyle.Rounded)
             self.throwButton!.buttonColor = UIColor.ht_grassColor()
             self.throwButton!.shadowColor = UIColor.ht_grassDarkColor()
-            self.throwButton!.setTitle("TRASH", forState: UIControlState.Normal)
+            self.throwButton!.setTitle("RECYCLE", forState: UIControlState.Normal)
             self.throwButton!.addTarget(self, action: "activateCan:", forControlEvents: UIControlEvents.TouchUpInside)
             self.view.addSubview(self.throwButton!)
         }
